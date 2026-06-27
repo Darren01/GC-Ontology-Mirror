@@ -2562,9 +2562,18 @@
 
     <!-- http://purl.org/gc/Bond -->
 
-    <owl:Class rdf:about="http://purl.org/gc/Bond">
-        <rdfs:subClassOf rdf:resource="http://purl.org/gc/MolecularStructureObject"/>
-    </owl:Class>
+<owl:Class rdf:about="http://purl.org/gc/Bond">
+    <rdfs:subClassOf rdf:resource="http://purl.org/gc/MolecularStructureObject"/>
+    <rdfs:subClassOf>
+        <owl:Restriction>
+            <owl:onProperty rdf:resource="http://purl.org/gc/binds"/>
+            <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</owl:cardinality>
+        </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:comment xml:lang="en">A class for generic chemical bond.</rdfs:comment>
+    <rdfs:label xml:lang="en">Bond</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://chemicalsemantics.com/"/>
+</owl:Class>
     
 
 
@@ -5636,14 +5645,7 @@
 
     <!-- http://purl.org/gc/Bond -->
 
-    <owl:NamedIndividual rdf:about="http://purl.org/gc/Bond">
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.org/gc/binds"/>
-                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</owl:cardinality>
-            </owl:Restriction>
-        </rdf:type>
-    </owl:NamedIndividual>
+
     
 
 
@@ -5875,11 +5877,7 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-    <rdf:Description rdf:about="http://purl.org/gc/Bond">
-        <rdfs:comment xml:lang="en">A class for generic chemical bond.</rdfs:comment>
-        <rdfs:label xml:lang="en">Bond</rdfs:label>
-        <rdfs:isDefinedBy rdf:resource="http://chemicalsemantics.com/"/>
-    </rdf:Description>
+
     <rdf:Description rdf:about="http://purl.org/gc/RHF">
         <rdfs:comment xml:lang="en">A class for RHF.</rdfs:comment>
         <rdfs:label xml:lang="en">RHF</rdfs:label>

@@ -2,14 +2,14 @@
 <rdf:RDF xmlns="http://www.semanticweb.org/owl/owlapi/turtle#"
      xml:base="http://www.semanticweb.org/owl/owlapi/turtle"
      xmlns:cc="http://creativecommons.org/ns#"
-     xmlns:qudt="http://data.nasa.gov/qudt/owl/qudt#"
+     xmlns:qudt="http://qudt.org/schema/qudt/"
      
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:skos="http://www.w3.org/2004/02/skos/core#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:bfo="http://purl.obolibrary.org/obo/"
-     xmlns:unit="http://data.nasa.gov/qudt/owl/unit#"
+     xmlns:unit="http://qudt.org/vocab/unit/"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:dcterms="http://purl.org/dc/terms/"
@@ -2242,57 +2242,57 @@
     
 
 
-    <!-- http://data.nasa.gov/qudt/owl/qudt#ChemistryUnit -->
+    <!-- http://qudt.org/schema/qudt/ChemistryUnit -->
 
-    <owl:Class rdf:about="http://data.nasa.gov/qudt/owl/qudt#ChemistryUnit">
+    <owl:Class rdf:about="http://qudt.org/schema/qudt/ChemistryUnit">
         <rdfs:subClassOf rdf:resource="http://purl.org/gc/AuxiliaryConcept"/>
     </owl:Class>
     
 
 
-    <!-- http://data.nasa.gov/qudt/owl/qudt#DerivedUnit -->
+    <!-- http://qudt.org/schema/qudt/DerivedUnit -->
 
-    <owl:Class rdf:about="http://data.nasa.gov/qudt/owl/qudt#DerivedUnit">
+    <owl:Class rdf:about="http://qudt.org/schema/qudt/DerivedUnit">
         <rdfs:subClassOf rdf:resource="http://purl.org/gc/AuxiliaryConcept"/>
     </owl:Class>
     
 
 
-    <!-- http://data.nasa.gov/qudt/owl/qudt#ElectricDipoleMomentUnit -->
+    <!-- http://qudt.org/schema/qudt/ElectricDipoleMomentUnit -->
 
-    <owl:Class rdf:about="http://data.nasa.gov/qudt/owl/qudt#ElectricDipoleMomentUnit">
+    <owl:Class rdf:about="http://qudt.org/schema/qudt/ElectricDipoleMomentUnit">
         <rdfs:subClassOf rdf:resource="http://purl.org/gc/AuxiliaryConcept"/>
     </owl:Class>
     
 
 
-    <!-- http://data.nasa.gov/qudt/owl/qudt#EnergyAndWorkUnit -->
+    <!-- http://qudt.org/schema/qudt/EnergyAndWorkUnit -->
 
-    <owl:Class rdf:about="http://data.nasa.gov/qudt/owl/qudt#EnergyAndWorkUnit">
+    <owl:Class rdf:about="http://qudt.org/schema/qudt/EnergyAndWorkUnit">
         <rdfs:subClassOf rdf:resource="http://purl.org/gc/AuxiliaryConcept"/>
     </owl:Class>
     
 
 
-    <!-- http://data.nasa.gov/qudt/owl/qudt#FrequencyUnit -->
+    <!-- http://qudt.org/schema/qudt/FrequencyUnit -->
 
-    <owl:Class rdf:about="http://data.nasa.gov/qudt/owl/qudt#FrequencyUnit">
+    <owl:Class rdf:about="http://qudt.org/schema/qudt/FrequencyUnit">
         <rdfs:subClassOf rdf:resource="http://purl.org/gc/AuxiliaryConcept"/>
     </owl:Class>
     
 
 
-    <!-- http://data.nasa.gov/qudt/owl/qudt#LengthUnit -->
+    <!-- http://qudt.org/schema/qudt/LengthUnit -->
 
-    <owl:Class rdf:about="http://data.nasa.gov/qudt/owl/qudt#LengthUnit">
+    <owl:Class rdf:about="http://qudt.org/schema/qudt/LengthUnit">
         <rdfs:subClassOf rdf:resource="http://purl.org/gc/AuxiliaryConcept"/>
     </owl:Class>
     
 
 
-    <!-- http://data.nasa.gov/qudt/owl/qudt#TemperatureUnit -->
+    <!-- http://qudt.org/schema/qudt/TemperatureUnit -->
 
-    <owl:Class rdf:about="http://data.nasa.gov/qudt/owl/qudt#TemperatureUnit">
+    <owl:Class rdf:about="http://qudt.org/schema/qudt/TemperatureUnit">
         <rdfs:subClassOf rdf:resource="http://purl.org/gc/AuxiliaryConcept"/>
     </owl:Class>
     
@@ -5554,58 +5554,58 @@
     
 
 
-    <!-- http://data.nasa.gov/qudt/owl/unit#Angstrom -->
+    <!-- http://qudt.org/vocab/unit/Angstrom -->
 
-    <owl:NamedIndividual rdf:about="http://data.nasa.gov/qudt/owl/unit#Angstrom">
+    <owl:NamedIndividual rdf:about="http://qudt.org/vocab/unit/Angstrom">
         <owl:sameAs rdf:resource="http://purl.org/gc/angstrom"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://data.nasa.gov/qudt/owl/unit#ElectronVolt -->
+    <!-- http://qudt.org/vocab/unit/ElectronVolt -->
 
-    <owl:NamedIndividual rdf:about="http://data.nasa.gov/qudt/owl/unit#ElectronVolt">
+    <owl:NamedIndividual rdf:about="http://qudt.org/vocab/unit/ElectronVolt">
         <owl:sameAs rdf:resource="http://purl.org/gc/electronVolts"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://data.nasa.gov/qudt/owl/unit#Hartree -->
+    <!-- http://qudt.org/vocab/unit/Hartree -->
 
-    <owl:NamedIndividual rdf:about="http://data.nasa.gov/qudt/owl/unit#Hartree">
+    <owl:NamedIndividual rdf:about="http://qudt.org/vocab/unit/Hartree">
         <owl:sameAs rdf:resource="http://purl.org/gc/hartree"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://data.nasa.gov/qudt/owl/unit#Kelvin -->
+    <!-- http://qudt.org/vocab/unit/Kelvin -->
 
-    <owl:NamedIndividual rdf:about="http://data.nasa.gov/qudt/owl/unit#Kelvin">
-        <owl:sameAs rdf:resource="http://data.nasa.gov/qudt/owl/unit#kelvin"/>
+    <owl:NamedIndividual rdf:about="http://qudt.org/vocab/unit/Kelvin">
+        <owl:sameAs rdf:resource="http://qudt.org/vocab/unit/kelvin"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://data.nasa.gov/qudt/owl/unit#Kilocalorie -->
+    <!-- http://qudt.org/vocab/unit/Kilocalorie -->
 
-    <owl:NamedIndividual rdf:about="http://data.nasa.gov/qudt/owl/unit#Kilocalorie">
+    <owl:NamedIndividual rdf:about="http://qudt.org/vocab/unit/Kilocalorie">
         <owl:sameAs rdf:resource="http://purl.org/gc/kiloCalories"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://data.nasa.gov/qudt/owl/unit#KilogramPerMole -->
+    <!-- http://qudt.org/vocab/unit/KilogramPerMole -->
 
-    <owl:NamedIndividual rdf:about="http://data.nasa.gov/qudt/owl/unit#KilogramPerMole">
+    <owl:NamedIndividual rdf:about="http://qudt.org/vocab/unit/KilogramPerMole">
         <owl:sameAs rdf:resource="http://purl.org/gc/kmPerMol"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://data.nasa.gov/qudt/owl/unit#kelvin -->
+    <!-- http://qudt.org/vocab/unit/kelvin -->
 
-    <owl:NamedIndividual rdf:about="http://data.nasa.gov/qudt/owl/unit#kelvin">
-        <rdf:type rdf:resource="http://data.nasa.gov/qudt/owl/qudt#TemperatureUnit"/>
+    <owl:NamedIndividual rdf:about="http://qudt.org/vocab/unit/kelvin">
+        <rdf:type rdf:resource="http://qudt.org/schema/qudt/TemperatureUnit"/>
         <rdfs:comment xml:lang="en">a unit of temperature.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://chemicalsemantics.com/"/>
         <rdfs:label xml:lang="en">Kelvin</rdfs:label>
@@ -5613,10 +5613,10 @@
     
 
 
-    <!-- http://data.nasa.gov/qudt/owl/unit#nano_meter -->
+    <!-- http://qudt.org/vocab/unit/nano_meter -->
 
-    <owl:NamedIndividual rdf:about="http://data.nasa.gov/qudt/owl/unit#nano_meter">
-        <rdf:type rdf:resource="http://data.nasa.gov/qudt/owl/qudt#DerivedUnit"/>
+    <owl:NamedIndividual rdf:about="http://qudt.org/vocab/unit/nano_meter">
+        <rdf:type rdf:resource="http://qudt.org/schema/qudt/DerivedUnit"/>
         <rdfs:comment xml:lang="en">a unit of length</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://chemicalsemantics.com/"/>
         <rdfs:label xml:lang="en">nano meter</rdfs:label>
@@ -5748,7 +5748,7 @@
     <!-- http://purl.org/gc/angstrom -->
 
     <owl:NamedIndividual rdf:about="http://purl.org/gc/angstrom">
-        <rdf:type rdf:resource="http://data.nasa.gov/qudt/owl/qudt#LengthUnit"/>
+        <rdf:type rdf:resource="http://qudt.org/schema/qudt/LengthUnit"/>
         <rdfs:comment xml:lang="en">A unit of length.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://chemicalsemantics.com/"/>
         <rdfs:label xml:lang="en">angstrom</rdfs:label>
@@ -5759,7 +5759,7 @@
     <!-- http://purl.org/gc/atomicUnit -->
 
     <owl:NamedIndividual rdf:about="http://purl.org/gc/atomicUnit">
-        <rdf:type rdf:resource="http://data.nasa.gov/qudt/owl/qudt#LengthUnit"/>
+        <rdf:type rdf:resource="http://qudt.org/schema/qudt/LengthUnit"/>
         <rdfs:comment xml:lang="en">Atomic Unit this is measure in units of elementary atomic charge called atomicUnits (a.u) .
     The elementary unit of charge (e) is called an atomic unit (a.u.) of charge and is so many Coulombs (1.6 *10**(-19) Coulombs. (float)</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://chemicalsemantics.com/"/>
@@ -5771,8 +5771,8 @@
     <!-- http://purl.org/gc/cm-1 -->
 
     <owl:NamedIndividual rdf:about="http://purl.org/gc/cm-1">
-        <rdf:type rdf:resource="http://data.nasa.gov/qudt/owl/qudt#DerivedUnit"/>
-        <rdf:type rdf:resource="http://data.nasa.gov/qudt/owl/qudt#FrequencyUnit"/>
+        <rdf:type rdf:resource="http://qudt.org/schema/qudt/DerivedUnit"/>
+        <rdf:type rdf:resource="http://qudt.org/schema/qudt/FrequencyUnit"/>
         <rdfs:comment xml:lang="en">A wavenumber - the unit of frequency.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://chemicalsemantics.com/"/>
         <rdfs:label xml:lang="en">cm-1</rdfs:label>
@@ -5783,7 +5783,7 @@
     <!-- http://purl.org/gc/debye -->
 
     <owl:NamedIndividual rdf:about="http://purl.org/gc/debye">
-        <rdf:type rdf:resource="http://data.nasa.gov/qudt/owl/qudt#ElectricDipoleMomentUnit"/>
+        <rdf:type rdf:resource="http://qudt.org/schema/qudt/ElectricDipoleMomentUnit"/>
         <rdfs:comment xml:lang="en"></rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://chemicalsemantics.com/"/>
         <rdfs:label xml:lang="en">debye</rdfs:label>
@@ -5794,7 +5794,7 @@
     <!-- http://purl.org/gc/electronVolts -->
 
     <owl:NamedIndividual rdf:about="http://purl.org/gc/electronVolts">
-        <rdf:type rdf:resource="http://data.nasa.gov/qudt/owl/qudt#EnergyAndWorkUnit"/>
+        <rdf:type rdf:resource="http://qudt.org/schema/qudt/EnergyAndWorkUnit"/>
         <rdfs:comment xml:lang="en">the unit of energy.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://chemicalsemantics.com/"/>
         <rdfs:label xml:lang="en">electron volts</rdfs:label>
@@ -5805,7 +5805,7 @@
     <!-- http://purl.org/gc/hartree -->
 
     <owl:NamedIndividual rdf:about="http://purl.org/gc/hartree">
-        <rdf:type rdf:resource="http://data.nasa.gov/qudt/owl/qudt#EnergyAndWorkUnit"/>
+        <rdf:type rdf:resource="http://qudt.org/schema/qudt/EnergyAndWorkUnit"/>
         <rdfs:comment xml:lang="en">the unit of energy.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://chemicalsemantics.com/"/>
         <rdfs:label xml:lang="en">hartree</rdfs:label>
@@ -5816,8 +5816,8 @@
     <!-- http://purl.org/gc/kiloCalories -->
 
     <owl:NamedIndividual rdf:about="http://purl.org/gc/kiloCalories">
-        <rdf:type rdf:resource="http://data.nasa.gov/qudt/owl/qudt#DerivedUnit"/>
-        <rdf:type rdf:resource="http://data.nasa.gov/qudt/owl/qudt#EnergyAndWorkUnit"/>
+        <rdf:type rdf:resource="http://qudt.org/schema/qudt/DerivedUnit"/>
+        <rdf:type rdf:resource="http://qudt.org/schema/qudt/EnergyAndWorkUnit"/>
         <rdfs:comment xml:lang="en">the unit of energy</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://chemicalsemantics.com/"/>
         <rdfs:label xml:lang="en">kilo calories</rdfs:label>
@@ -5828,7 +5828,7 @@
     <!-- http://purl.org/gc/kiloCaloriesPerAngstrom -->
 
     <owl:NamedIndividual rdf:about="http://purl.org/gc/kiloCaloriesPerAngstrom">
-        <rdf:type rdf:resource="http://data.nasa.gov/qudt/owl/qudt#DerivedUnit"/>
+        <rdf:type rdf:resource="http://qudt.org/schema/qudt/DerivedUnit"/>
         <rdfs:comment xml:lang="en">???</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://chemicalsemantics.com/"/>
         <rdfs:label xml:lang="en">kilo calories per angstrom</rdfs:label>
@@ -5839,7 +5839,7 @@
     <!-- http://purl.org/gc/kiloJoules -->
 
     <owl:NamedIndividual rdf:about="http://purl.org/gc/kiloJoules">
-        <rdf:type rdf:resource="http://data.nasa.gov/qudt/owl/qudt#EnergyAndWorkUnit"/>
+        <rdf:type rdf:resource="http://qudt.org/schema/qudt/EnergyAndWorkUnit"/>
         <rdfs:comment xml:lang="en">a unit of energy</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://chemicalsemantics.com/"/>
         <rdfs:label xml:lang="en">kilo joules</rdfs:label>
@@ -5850,7 +5850,7 @@
     <!-- http://purl.org/gc/kmPerMol -->
 
     <owl:NamedIndividual rdf:about="http://purl.org/gc/kmPerMol">
-        <rdf:type rdf:resource="http://data.nasa.gov/qudt/owl/qudt#ChemistryUnit"/>
+        <rdf:type rdf:resource="http://qudt.org/schema/qudt/ChemistryUnit"/>
         <rdfs:isDefinedBy rdf:resource="http://chemicalsemantics.com/"/>
         <rdfs:label xml:lang="en">kilo grap per mol</rdfs:label>
     </owl:NamedIndividual>

@@ -2257,6 +2257,7 @@
 
     <owl:Class rdf:about="http://qudt.org/schema/qudt/ChemistryUnit">
         <rdfs:subClassOf rdf:resource="http://purl.org/gc/AuxiliaryConcept"/>
+        <rdfs:label xml:lang="en">Chemistry Unit</rdfs:label>
     </owl:Class>
     
 
@@ -2265,6 +2266,7 @@
 
     <owl:Class rdf:about="http://qudt.org/schema/qudt/DerivedUnit">
         <rdfs:subClassOf rdf:resource="http://purl.org/gc/AuxiliaryConcept"/>
+        <rdfs:label xml:lang="en">Derived Unit</rdfs:label>
     </owl:Class>
     
 
@@ -2273,6 +2275,7 @@
 
     <owl:Class rdf:about="http://qudt.org/schema/qudt/ElectricDipoleMomentUnit">
         <rdfs:subClassOf rdf:resource="http://purl.org/gc/AuxiliaryConcept"/>
+        <rdfs:label xml:lang="en">Electric Dipole Moment Unit</rdfs:label>
     </owl:Class>
     
 
@@ -2281,6 +2284,7 @@
 
     <owl:Class rdf:about="http://qudt.org/schema/qudt/EnergyAndWorkUnit">
         <rdfs:subClassOf rdf:resource="http://purl.org/gc/AuxiliaryConcept"/>
+        <rdfs:label xml:lang="en">Energy And Work Unit</rdfs:label>
     </owl:Class>
     
 
@@ -2289,6 +2293,7 @@
 
     <owl:Class rdf:about="http://qudt.org/schema/qudt/FrequencyUnit">
         <rdfs:subClassOf rdf:resource="http://purl.org/gc/AuxiliaryConcept"/>
+        <rdfs:label xml:lang="en">Frequency Unit</rdfs:label>
     </owl:Class>
     
 
@@ -2297,6 +2302,7 @@
 
     <owl:Class rdf:about="http://qudt.org/schema/qudt/LengthUnit">
         <rdfs:subClassOf rdf:resource="http://purl.org/gc/AuxiliaryConcept"/>
+        <rdfs:label xml:lang="en">Length Unit</rdfs:label>
     </owl:Class>
     
 
@@ -2305,6 +2311,7 @@
 
     <owl:Class rdf:about="http://qudt.org/schema/qudt/TemperatureUnit">
         <rdfs:subClassOf rdf:resource="http://purl.org/gc/AuxiliaryConcept"/>
+        <rdfs:label xml:lang="en">Temperature Unit</rdfs:label>
     </owl:Class>
     
 
@@ -5890,8 +5897,7 @@
 
 
     <rdf:Description rdf:about="http://purl.org/gc/hasAtomProperty">
-        <rdfs:label xml:lang="en">Generic property of atoms</rdfs:label>
-        <rdfs:label xml:lang="en">Atom Property</rdfs:label>
+        <rdfs:label xml:lang="en">has atom property</rdfs:label>
         <rdfs:comment xml:lang="en">A property that allows to describe an atom, like NMR Shielding</rdfs:comment>
         <rdfs:comment xml:lang="en">A property that allows to declare a general property for an atom.</rdfs:comment>
     </rdf:Description>
@@ -5948,7 +5954,7 @@
         <rdfs:label xml:lang="en">There is Molecular Mechanical Calculation</rdfs:label>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.org/gc/hasMultipleDeterminant">
-        <rdfs:label xml:lang="en">Multiple Determinant</rdfs:label>
+        <rdfs:label xml:lang="en">has multiple determinant</rdfs:label>
         <rdfs:comment xml:lang="en">A property that specifies Multiple Determinant.</rdfs:comment>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.org/gc/hasOccupiedOrbitalsIncluded">

@@ -13,6 +13,7 @@
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:dcterms="http://purl.org/dc/terms/"
+     xmlns:obo="http://purl.obolibrary.org/obo/"
      xmlns:gc="http://purl.org/gc/"
      xmlns:foaf="http://xmlns.com/foaf/0.1/"
      xmlns:dc="http://purl.org/dc/elements/1.1/">
@@ -2547,9 +2548,18 @@
 
     <owl:Class rdf:about="http://purl.org/gc/BasisSet">
         <rdfs:subClassOf rdf:resource="http://purl.org/gc/MethodologyFeature"/>
-        <rdfs:comment xml:lang="en">A class for the basis set. In computational chemistry basis set is a set of functions which are combined to create molecular orbitals.</rdfs:comment>
+        <rdfs:comment xml:lang="en">A class for the basis set. In computational chemistry basis set is a set of functions which are combined to create molecular orbitals.
+        </rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://chemicalsemantics.com/"/>
         <rdfs:label xml:lang="en">Basis Set</rdfs:label>
+        <obo:IAO_0000115 xml:lang="en">A set of basis functions employed for the representation of molecular orbitals. One may distinguish the minimal basis set (includes one basis
+        function for each SCF occupied atomic orbital with distinct principal and angular momentum quantum numbers); split valence basis set (includes two or more sizes of basis 
+        function for each valence orbital); double zeta (DZ) basis set (a split valence basis set that includes exactly twice as many functions as the minimal basis set); extended
+        basis set (the set larger than the double zeta basis set); polarized basis set (incorporates basis functions of higher angular quantum number beyond what is required by the
+        atom in its electronic ground state; allows orbitals to change not only a size, but also a shape); basis set with diffuse functions and others.</obo:IAO_0000115>
+        <dcterms:source xml:lang="en">PAC, 1999, 71, 1919. Glossary of terms used in theoretical organic chemistry, page 1925</dcterms:source>
+        <rdfs:seeAlso rdf:resource="https://goldbook.iupac.org/terms/view/BT06999"/>
+        <rdfs:seeAlso rdf:resource="https://doi.org/10.1351/goldbook.BT06999"/>
     </owl:Class>
     
 

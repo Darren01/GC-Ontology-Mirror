@@ -774,7 +774,7 @@
         <rdfs:domain rdf:resource="http://purl.org/gc/Atom"/>
         <rdfs:domain rdf:resource="http://purl.org/gc/MolecularSystem"/>
         <rdfs:domain rdf:resource="http://purl.org/gc/Molecule"/>
-        <rdfs:range rdf:resource="http://purl.org/gc/hasFloatValue"/>
+        <rdfs:range rdf:resource="http://purl.org/gc/FloatValue"/>
     </owl:ObjectProperty>
     
 
@@ -1704,7 +1704,10 @@
         <rdfs:subPropertyOf rdf:resource="http://purl.org/gc/hasValue"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:domain rdf:resource="http://purl.org/gc/FloatValue"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    	<rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    	<rdfs:comment xml:lang="en">A property that describes floating point value.</rdfs:comment>
+    	<rdfs:label xml:lang="en">has float value</rdfs:label>
+    	<rdfs:isDefinedBy rdf:resource="http://chemicalsemantics.com/"/>
     </owl:DatatypeProperty>
     
 
@@ -5387,9 +5390,7 @@
 
     <!-- http://purl.org/gc/hasFloatValue -->
 
-    <owl:Class rdf:about="http://purl.org/gc/hasFloatValue"/>
-    
-
+   
 
     <!-- http://purl.org/gc/jun-cc-pVDZ -->
 
@@ -5921,11 +5922,7 @@
         <rdfs:label xml:lang="en">has file</rdfs:label>
         <rdfs:comment xml:lang="en">A property that describes the reference to the attachment file.</rdfs:comment>
     </rdf:Description>
-    <rdf:Description rdf:about="http://purl.org/gc/hasFloatValue">
-        <rdfs:comment xml:lang="en">A property that describes floating point value.</rdfs:comment>
-        <rdfs:label xml:lang="en">has float value</rdfs:label>
-        <rdfs:isDefinedBy rdf:resource="http://chemicalsemantics.com/"/>
-    </rdf:Description>
+
     <rdf:Description rdf:about="http://purl.org/gc/hasForceField">
         <rdfs:comment xml:lang="en">A property that describes a specific force field for given Molecular Mechanics method.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://chemicalsemantics.com/"/>

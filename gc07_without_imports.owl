@@ -1306,12 +1306,6 @@
     
 
 
-    <!-- http://purl.org/gc/hasSystemMultiplicity -->
-
-    <owl:ObjectProperty rdf:about="http://purl.org/gc/hasSystemMultiplicity">
-        <rdfs:subPropertyOf rdf:resource="http://purl.org/gc/hasMolecularFeature"/>
-        <rdfs:domain rdf:resource="http://purl.org/gc/MolecularSystem"/>
-    </owl:ObjectProperty>
     
 
 
@@ -2117,9 +2111,17 @@
 
     <!-- http://purl.org/gc/hasSystemMultiplicity -->
 
-    <owl:DatatypeProperty rdf:about="http://purl.org/gc/hasSystemMultiplicity">
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#positiveInteger"/>
-    </owl:DatatypeProperty>
+	<owl:DatatypeProperty rdf:about="http://purl.org/gc/hasSystemMultiplicity">
+    	    <rdfs:subPropertyOf rdf:resource="http://purl.org/gc/hasMolecularFeature"/>
+    	    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    	    <rdfs:domain rdf:resource="http://purl.org/gc/MolecularSystem"/>
+    	    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#positiveInteger"/>
+    	    <rdfs:comment xml:lang="en">The spin multiplicity of the molecular system, 
+    	    defined as 2S+1 where S is the total spin. Singlet=1, doublet=2, triplet=3 etc.  
+    	    Always a positive integer.</rdfs:comment>
+    	    <rdfs:label xml:lang="en">has system multiplicity</rdfs:label>
+    	    <rdfs:isDefinedBy rdf:resource="http://chemicalsemantics.com/"/>
+	</owl:DatatypeProperty>
     
 
 
@@ -5022,12 +5024,14 @@
 
 
     <!-- http://purl.org/gc/SystemMultiplicity -->
-
+    
     <owl:Class rdf:about="http://purl.org/gc/SystemMultiplicity">
         <rdfs:subClassOf rdf:resource="http://purl.org/gc/GainesvilleCoreTerm"/>
-        <rdfs:comment xml:lang="en">A class for SystemMultiplicity.</rdfs:comment>
+        <rdfs:comment xml:lang="en">The spin multiplicity of a molecular system, 
+        defined as 2S+1 where S is the total spin quantum number.  
+        Takes positive integer values: 1 (singlet), 2 (doublet), 3 (triplet) etc.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://chemicalsemantics.com/"/>
-        <rdfs:label xml:lang="en">SystemMultiplicity</rdfs:label>
+        <rdfs:label xml:lang="en">System Multiplicity</rdfs:label>
     </owl:Class>
     
 
@@ -5985,11 +5989,7 @@
         <rdfs:comment xml:lang="en">A property that defines the spin type.</rdfs:comment>
         <rdfs:comment xml:lang="en">A property that describes handling of spins by the methodology (RHF,UHF,ROHF).</rdfs:comment>
     </rdf:Description>
-    <rdf:Description rdf:about="http://purl.org/gc/hasSystemMultiplicity">
-        <rdfs:isDefinedBy rdf:resource="http://chemicalsemantics.com/"/>
-        <rdfs:label xml:lang="en">has system multiplicity</rdfs:label>
-        <rdfs:comment xml:lang="en">A property that describes the system spin multiplicity.</rdfs:comment>
-    </rdf:Description>
+
     <rdf:Description rdf:about="http://purl.org/gc/hasTransitionCount">
         <rdfs:comment xml:lang="en">A property that describes the number of the electronic transitions in spectral calculations.</rdfs:comment>
         <rdfs:label xml:lang="en">has transition count</rdfs:label>

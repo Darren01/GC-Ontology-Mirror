@@ -5561,14 +5561,6 @@
         <rdfs:label xml:lang="en">Element</rdfs:label>
     </owl:Class>
     
-
-
-    <!-- http://www.w3.org/2000/01/rdf-schema#Class -->
-
-    <owl:Class rdf:about="http://www.w3.org/2000/01/rdf-schema#Class"/>
-    
-
-
     
 
 

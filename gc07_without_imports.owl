@@ -4607,9 +4607,7 @@
 
     <!-- http://purl.org/gc/RHF -->
 
-    <owl:Class rdf:about="http://purl.org/gc/RHF">
-        <rdfs:subClassOf rdf:resource="http://purl.org/gc/GainesvilleCoreTerm"/>
-    </owl:Class>
+
     
 
 
@@ -4939,7 +4937,29 @@
         <rdfs:label xml:lang="en">Spin Type</rdfs:label>
     </owl:Class>
     
+    <owl:Class rdf:about="http://purl.org/gc/RHF">
+        <rdfs:subClassOf rdf:resource="http://purl.org/gc/SpinType"/>
+        <rdfs:comment xml:lang="en">Restricted Hartree-Fock spin treatment.  
+        Applies to closed-shell systems where all electrons are paired.</rdfs:comment>
+        <rdfs:label xml:lang="en">RHF</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://chemicalsemantics.com/"/>
+    </owl:Class>
 
+    <owl:Class rdf:about="http://purl.org/gc/UHF">
+        <rdfs:subClassOf rdf:resource="http://purl.org/gc/SpinType"/>
+        <rdfs:comment xml:lang="en">Unrestricted Hartree-Fock spin treatment.  
+        Applies to open-shell systems where alpha and beta orbitals are treated independently.</rdfs:comment>
+        <rdfs:label xml:lang="en">UHF</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://chemicalsemantics.com/"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://purl.org/gc/ROHF">
+        <rdfs:subClassOf rdf:resource="http://purl.org/gc/SpinType"/>
+        <rdfs:comment xml:lang="en">Restricted Open-shell Hartree-Fock spin treatment.  
+        Applies to open-shell systems where paired electrons are restricted to share orbitals.</rdfs:comment>
+        <rdfs:label xml:lang="en">ROHF</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://chemicalsemantics.com/"/>
+    </owl:Class>
 
     <!-- http://purl.org/gc/SplitValencePopleBasisSet -->
 
@@ -5721,29 +5741,19 @@
 
     <!-- http://purl.org/gc/RHF -->
 
-    <owl:NamedIndividual rdf:about="http://purl.org/gc/RHF">
-        <rdf:type rdf:resource="http://purl.org/gc/SpinType"/>
-    </owl:NamedIndividual>
+
     
 
 
     <!-- http://purl.org/gc/ROHF -->
 
-    <owl:NamedIndividual rdf:about="http://purl.org/gc/ROHF">
-        <rdf:type rdf:resource="http://purl.org/gc/SpinType"/>
-        <rdfs:comment xml:lang="en">Open-shell restricted Hartree-Fock method.</rdfs:comment>
-        <rdfs:label xml:lang="en">ROHF</rdfs:label>
-    </owl:NamedIndividual>
+
     
 
 
     <!-- http://purl.org/gc/UHF -->
 
-    <owl:NamedIndividual rdf:about="http://purl.org/gc/UHF">
-        <rdf:type rdf:resource="http://purl.org/gc/SpinType"/>
-        <rdfs:comment xml:lang="en">Unrestricted Hartree-Fock method.</rdfs:comment>
-        <rdfs:label xml:lang="en">UHF</rdfs:label>
-    </owl:NamedIndividual>
+
     
 
 
@@ -5878,12 +5888,7 @@
      -->
 
 
-    <rdf:Description rdf:about="http://purl.org/gc/RHF">
-        <rdfs:comment xml:lang="en">A class for RHF.</rdfs:comment>
-        <rdfs:label xml:lang="en">RHF</rdfs:label>
-        <rdfs:isDefinedBy rdf:resource="http://chemicalsemantics.com/"/>
-        <rdfs:comment xml:lang="en">Restricted Hartree-Fock method.</rdfs:comment>
-    </rdf:Description>
+
     <rdf:Description rdf:about="http://purl.org/gc/hasAtomProperty">
         <rdfs:label xml:lang="en">Generic property of atoms</rdfs:label>
         <rdfs:label xml:lang="en">Atom Property</rdfs:label>

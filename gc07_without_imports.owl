@@ -17,29 +17,27 @@
      xmlns:foaf="http://xmlns.com/foaf/0.1/"
      xmlns:dc="http://purl.org/dc/elements/1.1/">
     <owl:Ontology rdf:about="http://purl.org/gc/">
-        <!--<owl:imports rdf:resource="http://data.qudt.org/qudt/owl/1.0.0/unit.owl"/> -->
-        
-        <!-- http://bfo.googlecode.com/svn/releases/2012-07-20-graz/owl-group/bfo.owl -->
-        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.7.0</owl:versionInfo>
-        <rdfs:comment xml:lang="en">An ontology for publishing results of computational chemistry.</rdfs:comment>
-        <dcterms:creator xml:lang="en">Chemical Semantics, Inc.</dcterms:creator>
-        <cc:license rdf:resource="http://creativecommons.org/licenses/by/3.0/"/>
-        <rdfs:isDefinedBy rdf:resource="http://chemicalsemantics.com/"/>
-        <dcterms:title xml:lang="en">GNVC: Gainesville Core Ontology - standard for publishing results of computational chemistry.</dcterms:title>
-        <dc:created>2015-03-04</dc:created>
-        <dc:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This ontology aims at complete description of typical Computational Chemistry experiment.
-
+    <owl:versionIRI rdf:resource="http://purl.org/gc/0.8.0"/>
+    <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.8.0</owl:versionInfo>
+    <dcterms:title xml:lang="en">GNVC: Gainesville Core Ontology - standard for publishing results of computational chemistry.</dcterms:title>
+    <rdfs:comment xml:lang="en">An ontology for publishing results of computational chemistry.</rdfs:comment>
+    <dc:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This ontology aims at complete description of typical Computational Chemistry experiment.
     Gainesville Core describes:
     - Molecular Publications
     - Molecular Systems
     - Molecular Calculations
-    Â 
+
     Molecular Systems contains Molecules
     The Molecules may have Residues (for biopolymers and polymers)
     Molecular Calculations contain Initial Data and Results
     The Initial Data may have Methods, Basis Sets, Functionals, etc.
     The Results may have Energies, Wave Functions and Spectra, etc.</dc:description>
-        <rdfs:label xml:lang="en">Gainesville Core Ontology</rdfs:label>
+    <dcterms:creator xml:lang="en">Chemical Semantics, Inc.</dcterms:creator>
+    <dcterms:contributor xml:lang="en">Darren (ont_mm project) - structural repairs v0.8.0</dcterms:contributor>
+    <cc:license rdf:resource="http://creativecommons.org/licenses/by/3.0/"/>
+    <rdfs:isDefinedBy rdf:resource="http://chemicalsemantics.com/"/>
+    <dc:created>2015-03-04</dc:created>
+    <dc:modified>2026-06-28</dc:modified>
     </owl:Ontology>
     
 

@@ -2325,7 +2325,7 @@
 
     <owl:Class rdf:about="http://purl.org/gc/AbInitioScf">
         <rdfs:subClassOf rdf:resource="http://purl.org/gc/SingleDeterminant"/>
-        <rdfs:comment xml:lang="en">A class for Self Consistent Field methods (Hartree-Fock methods) for approximate solution of SchrÃ¶dinger equation for quantum many body system.</rdfs:comment>
+        <rdfs:comment xml:lang="en">A class for Self Consistent Field methods (Hartree-Fock methods) for approximate solution of Schrödinger equation for quantum many body system.</rdfs:comment>
         <rdfs:label xml:lang="en">Ab initio SCF</rdfs:label>
     </owl:Class>
     
@@ -4055,7 +4055,7 @@
 
     <owl:Class rdf:about="http://purl.org/gc/MollerPlesset">
         <rdfs:subClassOf rdf:resource="http://purl.org/gc/SupraMolecularPT"/>
-        <rdfs:comment xml:lang="en">A class for MÃ¸llerâ€“Plesset perturbation theory method of quantum chemistry.</rdfs:comment>
+        <rdfs:comment xml:lang="en">A class for Møller–Plesset perturbation theory method of quantum chemistry.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://chemicalsemantics.com/"/>
         <rdfs:label xml:lang="en">MollerPlesset</rdfs:label>
     </owl:Class>
@@ -4077,7 +4077,7 @@
 
     <owl:Class rdf:about="http://purl.org/gc/Mp2">
         <rdfs:subClassOf rdf:resource="http://purl.org/gc/MollerPlesset"/>
-        <rdfs:comment xml:lang="en">A class for the second order MÃ¸llerâ€“Plesset perturbation theory method of quantum chemistry.</rdfs:comment>
+        <rdfs:comment xml:lang="en">A class for the second order Møller–Plesset perturbation theory method of quantum chemistry.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://chemicalsemantics.com/"/>
         <rdfs:label xml:lang="en">Mp2</rdfs:label>
     </owl:Class>
@@ -4088,7 +4088,7 @@
 
     <owl:Class rdf:about="http://purl.org/gc/Mp3">
         <rdfs:subClassOf rdf:resource="http://purl.org/gc/MollerPlesset"/>
-        <rdfs:comment xml:lang="en">A class for the third order MÃ¸llerâ€“Plesset perturbation theory method of quantum chemistry.</rdfs:comment>
+        <rdfs:comment xml:lang="en">A class for the third order Møller–Plesset perturbation theory method of quantum chemistry.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://chemicalsemantics.com/"/>
         <rdfs:label xml:lang="en">Mp3</rdfs:label>
     </owl:Class>
@@ -4099,7 +4099,7 @@
 
     <owl:Class rdf:about="http://purl.org/gc/Mp4">
         <rdfs:subClassOf rdf:resource="http://purl.org/gc/MollerPlesset"/>
-        <rdfs:comment xml:lang="en">A class for the fourth order MÃ¸llerâ€“Plesset perturbation theory method of quantum chemistry.</rdfs:comment>
+        <rdfs:comment xml:lang="en">A class for the fourth order Møller–Plesset perturbation theory method of quantum chemistry.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://chemicalsemantics.com/"/>
         <rdfs:label xml:lang="en">Mp4</rdfs:label>
     </owl:Class>
@@ -4631,7 +4631,7 @@
 
     <owl:Class rdf:about="http://purl.org/gc/RayleighSchroedinger">
         <rdfs:subClassOf rdf:resource="http://purl.org/gc/SupraMolecularPT"/>
-        <rdfs:comment xml:lang="en">A class for MÃ¸llerâ€“Plesset perturbation theory method of quantum chemistry.</rdfs:comment>
+        <rdfs:comment xml:lang="en">A class for Møller–Plesset perturbation theory method of quantum chemistry.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://chemicalsemantics.com/"/>
         <rdfs:label xml:lang="en">RayleighSchroedinger</rdfs:label>
     </owl:Class>

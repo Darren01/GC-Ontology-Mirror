@@ -439,6 +439,7 @@
         <rdfs:range rdf:resource="http://purl.org/gc/CorrelationFunctional"/>
         <rdfs:comment xml:lang="en">A property that describes the correlation functional for the given methodology.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://chemicalsemantics.com/"/>
+        <rdfs:label xml:lang="en">has correlation functional</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -451,6 +452,7 @@
         <rdfs:range rdf:resource="http://purl.org/gc/DftFlavor"/>
         <rdfs:comment xml:lang="en">A property that describes specific approximations to exchange-correlation functionals in the Density Functional Theory.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://chemicalsemantics.com/"/>
+        <rdfs:label xml:lang="en">has DFT flavor</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -463,6 +465,7 @@
         <rdfs:range rdf:resource="http://purl.org/gc/DensityFunctional"/>
         <rdfs:comment xml:lang="en">A property that describes DFT Functionals for the given methodology.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://chemicalsemantics.com/"/>
+        <rdfs:label xml:lang="en">has DFT functional</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -552,6 +555,7 @@
         <rdfs:range rdf:resource="http://purl.org/gc/DispersionCorrection"/>
         <rdfs:comment xml:lang="en">A property that describes the dispersion correction</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://chemicalsemantics.com/"/>
+        <rdfs:label xml:lang="en">has dispersion correction</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -624,6 +628,7 @@
         <rdfs:comment xml:lang="en">A property that describes a specific feature of given methodology.</rdfs:comment>
         <rdfs:comment>has feature</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://chemicalsemantics.com/"/>
+        <rdfs:label xml:lang="en">has feature</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -978,6 +983,7 @@
         <rdfs:range rdf:resource="http://purl.org/gc/NumberBasisFunc"/>
         <rdfs:comment xml:lang="en">A property that describes the number of basis functions.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://chemicalsemantics.com/"/>
+        <rdfs:label xml:lang="en">has number of basis functions</rdfs:label>
     </owl:ObjectProperty>
     
 

@@ -262,7 +262,7 @@
         <rdfs:domain rdf:resource="http://purl.org/gc/Publication"/>
         <rdfs:range rdf:resource="http://purl.org/gc/Author"/>
         <rdfs:comment xml:lang="en">A property that describes teh author</rdfs:comment>
-        <rdfs:label xml:lang="en">Author</rdfs:label>
+        <rdfs:label xml:lang="en">has author</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -828,7 +828,7 @@
         <rdfs:domain rdf:resource="http://purl.org/gc/MolecularSystem"/>
         <rdfs:range rdf:resource="http://purl.org/gc/MolecularComputation"/>
         <rdfs:comment xml:lang="en">A property that describes Molecular Computation</rdfs:comment>
-        <rdfs:label xml:lang="en">Molecular Computation</rdfs:label>
+        <rdfs:label xml:lang="en">has molecular computation</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -860,7 +860,7 @@
         <rdfs:domain rdf:resource="http://purl.org/gc/MolecularCalculation"/>
         <rdfs:range rdf:resource="http://purl.org/gc/MolecularSystem"/>
         <rdfs:comment xml:lang="en">A property ...</rdfs:comment>
-        <rdfs:label xml:lang="en">Molecular System</rdfs:label>
+        <rdfs:label xml:lang="en">has molecular system</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -870,7 +870,7 @@
     <owl:ObjectProperty rdf:about="http://purl.org/gc/hasMolecule">
         <rdfs:subPropertyOf rdf:resource="http://purl.org/gc/extraGCObjectProperty"/>
         <rdfs:comment xml:lang="en">A property that specifies a molecule.</rdfs:comment>
-        <rdfs:label xml:lang="en">Molecule</rdfs:label>
+        <rdfs:label xml:lang="en">has molecule</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -913,7 +913,7 @@
         <rdfs:subPropertyOf rdf:resource="http://purl.org/gc/extraGCObjectProperty"/>
         <rdfs:domain rdf:resource="http://purl.org/gc/MolecularSystem"/>
         <rdfs:comment xml:lang="en">A property that describes Multiple Reference State</rdfs:comment>
-        <rdfs:label xml:lang="en">Multiple Reference State</rdfs:label>
+        <rdfs:label xml:lang="en">has multiple reference state</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -1230,7 +1230,7 @@
         <rdfs:subPropertyOf rdf:resource="http://purl.org/gc/extraGCObjectProperty"/>
         <rdfs:domain rdf:resource="http://purl.org/gc/QuantumMechanics"/>
         <rdfs:comment xml:lang="en">A property ...</rdfs:comment>
-        <rdfs:label xml:lang="en">Single Reference State</rdfs:label>
+        <rdfs:label xml:lang="en">has single reference state</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -1314,7 +1314,7 @@
         <rdfs:domain rdf:resource="http://purl.org/gc/CalculatedProperty"/>
         <rdfs:range rdf:resource="http://purl.org/gc/CalculatedSystemProperties"/>
         <rdfs:comment xml:lang="en">A property ...</rdfs:comment>
-        <rdfs:label xml:lang="en">System Property</rdfs:label>
+        <rdfs:label xml:lang="en">has system property</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -3491,7 +3491,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.org/gc/GeneralizedGradientApprox-GGA"/>
         <rdfs:comment xml:lang="en">Grimme&apos;s parameterization of Becke 1997 functional.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://chemicalsemantics.com/"/>
-        <rdfs:label xml:lang="en">B97</rdfs:label>
+        <rdfs:label xml:lang="en">GrB97</rdfs:label>
     </owl:Class>
     
 

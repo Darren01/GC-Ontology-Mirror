@@ -4056,6 +4056,11 @@
         <rdfs:comment xml:lang="en">A class for molecule - electrically neutral group (or polyatomic ion) of two or more atoms held together by chemical bonds.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://chemicalsemantics.com/"/>
         <rdfs:label xml:lang="en">Molecule</rdfs:label>
+        <obo:IAO_0000115 xml:lang="en">An electrically neutral entity consisting of more than one atom (n > 1). Rigorously, a molecule, in which (n > 1) must correspond to a
+        depression on the potential energy surface that is deep enough to confine at least one vibrational state.</obo:IAO_0000115>
+        <dcterms:source xml:lang="en">PAC, 1994, 66, 1077. (Glossary of terms used in physical organic chemistry (IUPAC Recommendations 1994)) on page 1143</dcterms:source>
+        <rdfs:seeAlso rdf:resource="https://goldbook.iupac.org/terms/view/M04002"/>
+        <rdfs:seeAlso rdf:resource="https://doi.org/10.1351/goldbook.M04002"/>
     </owl:Class>
     
 
@@ -4305,6 +4310,16 @@
         <rdfs:isDefinedBy rdf:resource="http://chemicalsemantics.com/"/>
         <rdfs:label xml:lang="en">Orbital</rdfs:label>
         <rdfs:comment xml:lang="en">Orbital (1-electron wavefunction)</rdfs:comment>
+        <obo:IAO_0000115 xml:lang="en">A one-electron wavefunction describing an electron moving in the effective field provided by the nuclei and all other electrons of a molecular
+        entity of more than one atom. Such molecular orbitals can be transformed in prescribed ways into component functions to give 'localized molecular orbitals'. Molecular orbitals
+        can also be described, in terms of the number of nuclei (or 'centres') encompassed, as two-centre, multi-centre, etc. molecular orbitals, and are often expressed as a linear
+        combination of atomic orbitals. An orbital is usually depicted by sketching contours on which the wavefunction has a constant value (contour map) or by indicating
+        schematically the envelope of the region of space in which there is an arbitrarily fixed high (say 96%) probability of finding the electron occupying the orbital, giving also
+        the algebraic sign (+ or −) of the wavefunction in each part of that region.</obo:IAO_0000115>
+        <dcterms:source xml:lang="en">PAC, 1994, 66, 1077. (Glossary of terms used in physical organic chemistry (IUPAC Recommendations 1994)) on page 1142.</dcterms:source>
+        <dcterms:source xml:lang="en">Green Book, 2nd ed., p. 18</dcterms:source>
+        <rdfs:seeAlso rdf:resource="https://goldbook.iupac.org/terms/view/M03996"/>
+        <rdfs:seeAlso rdf:resource="https://doi.org/10.1351/goldbook.M03996"/>
     </owl:Class>
     
 
@@ -5282,6 +5297,11 @@
         <rdfs:comment xml:lang="en">A class for the mathematical description of a quantum particle, in most practical cases of the electron.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://chemicalsemantics.com/"/>
         <rdfs:label xml:lang="en">Wave Function</rdfs:label>
+        <obo:IAO_0000115 xml:lang="en">The solution of the Schrödinger equation, eigenfunction of the hamiltonian operator. Complex conjugate functions are denoted by an asterisk read
+        as 'star'.</obo:IAO_0000115>
+        <dcterms:source xml:lang="en">Green Book, 2nd ed., p. 16 </dcterms:source>
+        <rdfs:seeAlso rdf:resource="https://goldbook.iupac.org/terms/view/W06657"/>
+        <rdfs:seeAlso rdf:resource="https://doi.org/10.1351/goldbook.W06657"/>
     </owl:Class>
     
 

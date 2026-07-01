@@ -3106,6 +3106,11 @@
         <rdfs:comment xml:lang="en">A class for all density functionals in Density Functional Theories.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://chemicalsemantics.com/"/>
         <rdfs:label xml:lang="en">Density Functional</rdfs:label>
+        <obo:IAO_0000115 xml:lang="en">Density Functional Theory - A quantum mechanical modeling method used to investigate the electronic structure of molecules using functionals
+        that describe the spatially dependent electron density, rather than the wavefunction as in ab initio and semi-empirical quantum chemical methods.</obo:IAO_0000115>
+        <dcterms:source xml:lang="en">PAC, 2016, 88, 239. (Glossary of terms used in computational drug design, part II (IUPAC Recommendations 2015)) on page 245</dcterms:source>
+        <rdfs:seeAlso rdf:resource="https://goldbook.iupac.org/terms/view/11435"/>
+        <rdfs:seeAlso rdf:resource="https://doi.org/10.1351/goldbook.11435"/>
     </owl:Class>
     
 

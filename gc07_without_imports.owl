@@ -198,6 +198,9 @@
             </owl:Class>
         </rdfs:domain>
         <rdfs:range rdf:resource="http://purl.org/gc/Atom"/>
+        <rdfs:comment xml:lang="en">A property that describes atoms comprised by a molecule or residue.</rdfs:comment>
+        <rdfs:label xml:lang="en">has atom</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://chemicalsemantics.com/"/>
         <owl:propertyChainAxiom rdf:parseType="Collection">
             <rdf:Description rdf:about="http://purl.org/gc/hasResidue"/>
             <rdf:Description rdf:about="http://purl.org/gc/hasAtom"/>
@@ -1084,7 +1087,7 @@
     <owl:ObjectProperty rdf:about="http://purl.org/gc/hasOutputFile">
         <rdfs:subPropertyOf rdf:resource="http://purl.org/gc/extraGCObjectProperty"/>
         <rdfs:comment xml:lang="en">A property that specifies the Output file.</rdfs:comment>
-        <rdfs:label xml:lang="en">Output File</rdfs:label>
+        <rdfs:label xml:lang="en">has output file</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -1785,7 +1788,7 @@
         <rdfs:domain rdf:resource="http://purl.org/gc/ComputationalChemistryPublication"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:comment xml:lang="en">A property that specifies input file for calculations.</rdfs:comment>
-        <rdfs:label xml:lang="en">Input File</rdfs:label>
+        <rdfs:label xml:lang="en">has input file</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -2402,6 +2405,7 @@
         <rdfs:comment xml:lang="en">A class for atoms, the basic unit of matter.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://chemicalsemantics.com/"/>
         <rdfs:label xml:lang="en">Atom</rdfs:label>
+        <rdfs:label xml:lang="en">Atom</rdfs:label>
         <obo:IAO_0000115 xml:lang="en">Smallest particle still characterizing a chemical element. It consists of a nucleus of a positive charge (Z is the proton number and e the
         elementary charge) carrying almost all its mass (more than 99.9%) and electrons determining its size.</obo:IAO_0000115>
         <dcterms:source xml:lang="en">Red Book, 3rd ed., p. 35</dcterms:source>
@@ -2598,6 +2602,8 @@
 
 <owl:Class rdf:about="http://purl.org/gc/Bond">
     <rdfs:subClassOf rdf:resource="http://purl.org/gc/MolecularStructureObject"/>
+    <rdfs:comment xml:lang="en">A generic chemical bond between two atoms.</rdfs:comment>
+    <rdfs:label xml:lang="en">Bond</rdfs:label>
     <rdfs:subClassOf>
         <owl:Restriction>
             <owl:onProperty rdf:resource="http://purl.org/gc/binds"/>

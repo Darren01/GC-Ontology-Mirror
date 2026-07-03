@@ -37,7 +37,7 @@
     <rdfs:comment xml:lang="en">The design and repair decisions in this fork were informed in part by the landscape review of computational chemistry ontologies: ChemRxiv 2024,
     doi:10.26434/chemrxiv-2024-fvzpq</rdfs:comment>
     <dcterms:creator xml:lang="en">Chemical Semantics, Inc.</dcterms:creator>
-    <dcterms:contributor xml:lang="en">Darren Rhodes (ont_mm project) - structural repairs v0.8.0</dcterms:contributor>
+    <dcterms:contributor xml:lang="en">Darren Rhodes (ont_mm project) - structural repairs v0.8.0, with AI-assisted tooling support (Claude, Anthropic)</dcterms:contributor>
     <cc:license rdf:resource="http://creativecommons.org/licenses/by/3.0/"/>
     <dcterms:license rdf:resource="http://creativecommons.org/licenses/by/3.0/"/>
     <rdfs:isDefinedBy rdf:resource="http://chemicalsemantics.com/"/>

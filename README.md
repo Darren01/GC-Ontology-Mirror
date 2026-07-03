@@ -134,3 +134,7 @@ If you would like to contribute definitions, bug fixes, or extensions:
 
 Issues labelled `good first issue` are suitable for new contributors and 
 typically involve adding a formal IAO:0000115 definition to an existing term.
+
+## Acknowledgements
+The repair and documentation work in this fork was carried out by Darren Rhodes
+using Claude (Anthropic) as a technical assistant for XML editing, ROBOT tooling, and OWL pattern guidance.

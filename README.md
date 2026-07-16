@@ -135,6 +135,23 @@ If you would like to contribute definitions, bug fixes, or extensions:
 Issues labelled `good first issue` are suitable for new contributors and 
 typically involve adding a formal IAO:0000115 definition to an existing term.
 
+---
+
+## Additions in v0.8.1
+
+### gc:debyeSquaredPerAmuAngstromSquared added
+GAMESS (US) reports IR intensity in Debye**2/amu-Angstrom**2, which had no 
+corresponding unit individual in the ontology (`gc:cm-1` existed for 
+frequency, but nothing for intensity). Added as a properly QUDT-typed 
+individual (`qudt:DerivedUnit`), consistent with the existing `gc:cm-1` 
+pattern. Distinct from the km/mol convention used by some other packages 
+(e.g. Gaussian) - the two require a conversion factor (1 Debye**2/amu-Angstrom**2 
+= 42.2561 km/mol), not a direct equivalence.
+
+Contributed via the ont_mm project (github.com/Darren01/ont_mm), which 
+consumes this ontology for a GAMESS output extraction and SPARQL-driven 
+data pipeline.
+
 ## Acknowledgements
 The repair and documentation work in this fork was carried out by Darren Rhodes
 using Claude (Anthropic) as a technical assistant for XML editing, ROBOT tooling, and OWL pattern guidance.

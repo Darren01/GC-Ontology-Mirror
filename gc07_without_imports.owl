@@ -18,8 +18,8 @@
      xmlns:foaf="http://xmlns.com/foaf/0.1/"
      xmlns:dc="http://purl.org/dc/elements/1.1/">
     <owl:Ontology rdf:about="http://purl.org/gc/">
-    <owl:versionIRI rdf:resource="http://purl.org/gc/0.8.0"/>
-    <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.8.0</owl:versionInfo>
+    <owl:versionIRI rdf:resource="http://purl.org/gc/0.8.1"/>
+    <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.8.1</owl:versionInfo>
     <dcterms:title xml:lang="en">GNVC: Gainesville Core Ontology - standard for publishing results of computational chemistry.</dcterms:title>
     <rdfs:comment xml:lang="en">An ontology for publishing results of computational chemistry.</rdfs:comment>
     <dc:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This ontology aims at complete description of typical Computational Chemistry experiment.
@@ -5831,6 +5831,16 @@
         <rdfs:comment xml:lang="en">A wavenumber - the unit of frequency.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://chemicalsemantics.com/"/>
         <rdfs:label xml:lang="en">cm-1</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+    <!-- http://purl.org/gc/debyeSquaredPerAmuAngstromSquared -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/gc/debyeSquaredPerAmuAngstromSquared">
+        <rdf:type rdf:resource="http://qudt.org/schema/qudt/DerivedUnit"/>
+        <rdfs:comment xml:lang="en">The unit GAMESS (US) reports IR intensity in: Debye**2/amu-Angstrom**2. Distinct from the km/mol convention used by some other quantum chemistry packages (e.g. Gaussian) - the two are not directly comparable without conversion (1 Debye**2/amu-Angstrom**2 = 42.2561 km/mol).</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://chemicalsemantics.com/"/>
+        <rdfs:label xml:lang="en">Debye^2/amu-Angstrom^2</rdfs:label>
     </owl:NamedIndividual>
     
 

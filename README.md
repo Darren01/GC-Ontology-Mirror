@@ -152,6 +152,33 @@ Contributed via the ont_mm project (github.com/Darren01/ont_mm), which
 consumes this ontology for a GAMESS output extraction and SPARQL-driven 
 data pipeline.
 
+## Additions in v0.8.2
+
+### Thermochemistry classes and properties added
+GAMESS (US) (and other quantum chemistry packages) reports thermochemical
+state functions - zero-point energy, enthalpy, entropy, and Gibbs free
+energy - computed from a vibrational/frequency analysis. These had no
+corresponding classes in the ontology; SystemEnergies previously only
+covered ElectronicEnergy, CoreEnergy, and TotalBOPotentialEnergy.
+
+Added four new classes (all subClassOf SystemEnergies) and four
+corresponding properties (all subPropertyOf hasSystemEnergiesResult,
+domain SystemEnergies, range FloatValue), each with a Gold-Book-sourced
+IAO:0000115 definition:
+
+- gc:ZeroPointEnergy / gc:hasZeroPointEnergy (Gold Book 08215)
+- gc:Enthalpy / gc:hasEnthalpy (Gold Book E02141)
+- gc:Entropy / gc:hasEntropy (Gold Book E02149)
+- gc:GibbsFreeEnergy / gc:hasGibbsFreeEnergy (Gold Book G02629)
+
+Also added gc:joulePerMoleKelvin, a QUDT-typed unit individual for
+entropy's native unit (J/(mol K)) - distinct from the kJ/mol unit used
+for enthalpy and Gibbs free energy in the same GAMESS output table.
+
+Contributed via the ont_mm project (github.com/Darren01/ont_mm), which
+consumes this ontology for a GAMESS output extraction and SPARQL-driven
+data pipeline.
+
 ## Acknowledgements
 The repair and documentation work in this fork was carried out by Darren Rhodes
 using Claude (Anthropic) as a technical assistant for XML editing, ROBOT tooling, and OWL pattern guidance.

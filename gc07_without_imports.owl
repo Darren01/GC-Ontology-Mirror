@@ -3670,17 +3670,12 @@
         <rdfs:comment xml:lang="en">A class for InfraRed Spectrum.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://chemicalsemantics.com/"/>
         <rdfs:label xml:lang="en">Infra Red Spectrum</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.org/gc/InfraredSpectrum -->
-
-    <owl:Class rdf:about="http://purl.org/gc/InfraredSpectrum">
-        <rdfs:subClassOf rdf:resource="http://purl.org/gc/GainesvilleCoreTerm"/>
-        <rdfs:comment xml:lang="en">A class for InfraredSpectrum.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="http://chemicalsemantics.com/"/>
-        <rdfs:label xml:lang="en">InfraredSpectrum</rdfs:label>
+        <obo:IAO_0000115 xml:lang="en">Infrared Spectrum - the output of infrared spectroscopy.  Infrared Spectroscopy - Measurement principle of vibrational spectroscopy using
+        infrared radiation.  Note: Without qualification, 'infrared spectroscopy' usually refers to use of the mid-infrared (wavelength range 2.5 to 25 μm, wavenumber range
+        (4000 cm-1 to 400 cm-1 ) region of the electromagnetic spectrum.</obo:IAO_0000115>
+        <dcterms:source xml:lang="en">PAC, 2021, 93, 647. (Glossary of methods and terms used in analytical spectroscopy (IUPAC Recommendations 2019)) on page 750.</dcterms:source>
+        <rdfs:seeAlso rdf:resource="https://goldbook.iupac.org/terms/view/08618"/>
+        <rdfs:seeAlso rdf:resource="https://doi.org/10.1351/goldbook.08618"/>
     </owl:Class>
     
 

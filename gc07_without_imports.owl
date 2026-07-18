@@ -2613,6 +2613,11 @@
     <rdfs:comment xml:lang="en">A class for generic chemical bond.</rdfs:comment>
     <rdfs:label xml:lang="en">Bond</rdfs:label>
     <rdfs:isDefinedBy rdf:resource="http://chemicalsemantics.com/"/>
+    <obo:IAO_0000115 xml:lang="en">There is a chemical bond between two atoms or groups of atoms in the case that the forces acting between them are such as to lead to the
+    formation of an aggregate with sufficient stability to make it convenient for the chemist to consider it as an independent 'molecular species'.</obo:IAO_0000115>
+    <dcterms:source xml:lang="en">PAC, 1994, 66, 1077. (Glossary of terms used in physical organic chemistry (IUPAC Recommendations 1994)) on page 1089.</dcterms:source>
+    <rdfs:seeAlso rdf:resource="https://goldbook.iupac.org/terms/view/B00697"/>
+    <rdfs:seeAlso rdf:resource="https://doi.org/10.1351/goldbook.B00697"/>
 </owl:Class>
     
 

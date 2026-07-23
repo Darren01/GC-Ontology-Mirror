@@ -18,8 +18,8 @@
      xmlns:foaf="http://xmlns.com/foaf/0.1/"
      xmlns:dc="http://purl.org/dc/elements/1.1/">
     <owl:Ontology rdf:about="http://purl.org/gc/">
-    <owl:versionIRI rdf:resource="http://purl.org/gc/0.8.5"/>
-    <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.8.5</owl:versionInfo>
+    <owl:versionIRI rdf:resource="http://purl.org/gc/0.8.6"/>
+    <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.8.6</owl:versionInfo>
     <dcterms:title xml:lang="en">GNVC: Gainesville Core Ontology - standard for publishing results of computational chemistry.</dcterms:title>
     <rdfs:comment xml:lang="en">An ontology for publishing results of computational chemistry.</rdfs:comment>
     <dc:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This ontology aims at complete description of typical Computational Chemistry experiment.
@@ -1567,7 +1567,7 @@
 
     <owl:ObjectProperty rdf:about="http://purl.org/gc/xAxis">
         <rdfs:subPropertyOf rdf:resource="http://purl.org/gc/extraGCObjectProperty"/>
-        <rdfs:domain rdf:resource="http://purl.org/gc/InfraRedSpectrum"/>
+        <rdfs:domain rdf:resource="http://purl.org/gc/InfraRedSpectra"/>
         <rdfs:comment xml:lang="en">A property that describes what is on xAxis</rdfs:comment>
         <rdfs:label xml:lang="en">x Axis</rdfs:label>
     </owl:ObjectProperty>
@@ -1588,7 +1588,7 @@
 
     <owl:ObjectProperty rdf:about="http://purl.org/gc/yAxis">
         <rdfs:subPropertyOf rdf:resource="http://purl.org/gc/extraGCObjectProperty"/>
-        <rdfs:domain rdf:resource="http://purl.org/gc/InfraRedSpectrum"/>
+        <rdfs:domain rdf:resource="http://purl.org/gc/InfraRedSpectra"/>
         <rdfs:comment xml:lang="en">A property that describes what is on Axis</rdfs:comment>
         <rdfs:label xml:lang="en">Y Axis</rdfs:label>
     </owl:ObjectProperty>
@@ -1599,7 +1599,7 @@
 
     <owl:ObjectProperty rdf:about="http://purl.org/gc/yAxisUnit">
         <rdfs:subPropertyOf rdf:resource="http://purl.org/gc/extraGCObjectProperty"/>
-        <rdfs:domain rdf:resource="http://purl.org/gc/InfraRedSpectrum"/>
+        <rdfs:domain rdf:resource="http://purl.org/gc/InfraRedSpectra"/>
         <rdfs:comment xml:lang="en">A property that describes Units of X Axis</rdfs:comment>
         <rdfs:label xml:lang="en">Y Axis Unit</rdfs:label>
     </owl:ObjectProperty>

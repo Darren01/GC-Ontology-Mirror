@@ -179,6 +179,110 @@ Contributed via the ont_mm project (github.com/Darren01/ont_mm), which
 consumes this ontology for a GAMESS output extraction and SPARQL-driven
 data pipeline.
 
+## Additions in v0.8.3
+
+### gc:degree added
+Bond angle and dihedral angle constraint values had no corresponding
+unit individual in the ontology - only gc:angstrom existed, for
+distance constraints.
+
+Added gc:degree as a properly QUDT-typed individual (qudt:PlaneAngleUnit).
+
+Contributed via the ont_mm project (github.com/Darren01/ont_mm), which
+consumes this ontology for a GAMESS output extraction and SPARQL-driven
+data pipeline.
+
+## Additions in v0.8.4
+
+### SaddlePoint, IRC, ReactionPath, ReactionPathPoint added
+A transition-state/reaction-pathway workflow - locating a saddle point,
+then following the intrinsic reaction coordinate away from it in both
+directions to connect reactants and products - had no corresponding
+vocabulary anywhere in the ontology. A review of related ontologies in
+the same ecosystem (OntoCompChem, OntoPESScan) confirmed neither covers
+this either - both are limited to single point/geometry optimization/
+frequency calculations and potential energy surface scans respectively;
+transition-state search and IRC following appear to be a genuine gap
+in the existing landscape, not something reused from elsewhere.
+
+Added four new classes:
+
+- gc:SaddlePoint (subClassOf MolecularComputation) - a calculation
+  that locates a stationary point with exactly one direction of
+  negative curvature (a first-order saddle point), corresponding to a
+  transition state.
+- gc:IRC (subClassOf MolecularComputation) - a calculation that
+  follows the intrinsic reaction coordinate away from a saddle point,
+  in either the forward or backward direction.
+- gc:ReactionPath - the combined reaction path connecting reactants to
+  products via a transition state, typically assembled from a forward
+  and a backward IRC run sharing the same saddle point.
+- gc:ReactionPathPoint - a single point along a reaction path, with an
+  index (position along the path) and an energy value relative to the
+  starting point.
+
+Contributed via the ont_mm project (github.com/Darren01/ont_mm), which
+consumes this ontology for a GAMESS output extraction and SPARQL-driven
+data pipeline.
+
+## Additions in v0.8.5
+
+### InfraRedSpectrum merged into InfraRedSpectra; UVVisSpectrum re-parented
+Two disconnected duplicate/orphaned terms found and fixed:
+
+InfraRedSpectrum and InfraRedSpectra were accidental duplicates for the
+same concept - the plural was already correctly subClassOf
+VibrationalSpectra, properly wired into the CalculationResult chain;
+the singular was disconnected (subClassOf GainesvilleCoreTerm only) but
+carried the real Gold Book citation (IUPAC 08618). Moved the citation
+onto the properly-wired class, deleted the duplicate. No pipeline
+impact - neither class was referenced by any built writer at the time.
+
+UVVisSpectrum was similarly disconnected. Re-parented from
+GainesvilleCoreTerm to ElectronicSpectra (properly wired, same sibling
+pattern as InfraRedSpectra/RamanSpectra under VibrationalSpectra) - now
+automatically eligible for the existing hasFrequencyPeak property
+(domain already includes ElectronicSpectra), no new properties needed.
+
+Contributed via the ont_mm project (github.com/Darren01/ont_mm), which
+consumes this ontology for a GAMESS output extraction and SPARQL-driven
+data pipeline.
+
+## Fixes in v0.8.6
+
+### Dangling domain references corrected
+Three properties (xAxis, yAxis, yAxisUnit) still had rdfs:domain
+pointing at InfraRedSpectrum, the class deleted in v0.8.5's merge -
+left dangling by that change rather than caught at the time. Corrected
+to point at InfraRedSpectra, the class InfraRedSpectrum was merged
+into.
+
+Contributed via the ont_mm project (github.com/Darren01/ont_mm), which
+consumes this ontology for a GAMESS output extraction and SPARQL-driven
+data pipeline.
+
+## Additions in v0.8.7
+
+### gc:ppm added
+NMR shielding and chemical shift values (isotropic and anisotropy
+components) had no corresponding unit individual in the ontology -
+nothing in gc: represented parts per million, the standard unit both
+quantities are conventionally reported in.
+
+Added gc:ppm as a properly QUDT-typed individual (qudt:Unit), with an
+owl:sameAs link to the real, current QUDT PPM unit
+(http://qudt.org/vocab/unit/PPM, itself typed qudt:Unit under
+quantitykind:DimensionlessRatio, alongside PERCENT/PPB/PPT) - the same
+verify-before-reuse discipline as gc:degree and gc:angstrom.
+
+(Originally added in the commit before this one, but without its own
+version bump - v0.8.7 corrects that, rather than leaving gc:ppm
+permanently unversioned.)
+
+Contributed via the ont_mm project (github.com/Darren01/ont_mm), which
+consumes this ontology for a GAMESS output extraction and SPARQL-driven
+data pipeline.
+
 ## Acknowledgements
 The repair and documentation work in this fork was carried out by Darren Rhodes
 using Claude (Anthropic) as a technical assistant for XML editing, ROBOT tooling, and OWL pattern guidance.

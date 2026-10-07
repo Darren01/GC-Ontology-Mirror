@@ -283,6 +283,38 @@ Contributed via the ont_mm project (github.com/Darren01/ont_mm), which
 consumes this ontology for a GAMESS output extraction and SPARQL-driven
 data pipeline.
 
+## Fixes in v0.8.8
+
+### Multiple rdfs:domain declarations now read as "any of", not "all of"
+Six properties - hasBasisSet, hasForceField, hasFrequencyPeak, hasMass,
+hasParameterSet and hasPeakCount - each listed two or three rdfs:domain
+classes as separate statements. In OWL separate domain statements are
+conjunctive: a subject must belong to *all* of the listed classes. The
+intent was plainly "any of". Reasoned over real data this produced
+false conclusions: every experiment typed as a gc:Atom, and every
+infrared spectrum also typed as an NMR spectrum and an electronic
+spectrum.
+
+Each of the six now has a single rdfs:domain, the owl:unionOf the
+classes it listed - the same form three other properties already used.
+Verified by rebuilding two real datasets from the ont_mm project and
+reasoning over them: the reasoner stays consistent, exactly the false
+types disappear (30 gc:Atom, 15 NMR and 15 electronic spectrum
+assertions in one dataset; 61, 32 and 32 in the other), and nothing
+else changes.
+
+Deliberately not changed: hasBasisSet is still declared as both an
+object property and a datatype property (illegal punning in OWL 2 DL),
+with ranges BasisSet and Literal. And as a sub-property of hasFeature,
+whose domain is MolecularMethodology, it still implies that whatever
+carries a basis set is a methodology - which matches its own definition
+("assigned to a given quantum methodology"), so that is a modelling
+question for data producers rather than a defect to patch here.
+
+Contributed via the ont_mm project (github.com/Darren01/ont_mm), which
+consumes this ontology for a GAMESS output extraction and SPARQL-driven
+data pipeline.
+
 ## Acknowledgements
 The repair and documentation work in this fork was carried out by Darren Rhodes
 using Claude (Anthropic) as a technical assistant for XML editing, ROBOT tooling, and OWL pattern guidance.

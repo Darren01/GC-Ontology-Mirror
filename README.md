@@ -303,13 +303,51 @@ types disappear (30 gc:Atom, 15 NMR and 15 electronic spectrum
 assertions in one dataset; 61, 32 and 32 in the other), and nothing
 else changes.
 
-Deliberately not changed: hasBasisSet is still declared as both an
+Deliberately not changed in this version (fixed in v0.8.9): hasBasisSet is still declared as both an
 object property and a datatype property (illegal punning in OWL 2 DL),
 with ranges BasisSet and Literal. And as a sub-property of hasFeature,
 whose domain is MolecularMethodology, it still implies that whatever
 carries a basis set is a methodology - which matches its own definition
 ("assigned to a given quantum methodology"), so that is a modelling
 question for data producers rather than a defect to patch here.
+
+Contributed via the ont_mm project (github.com/Darren01/ont_mm), which
+consumes this ontology for a GAMESS output extraction and SPARQL-driven
+data pipeline.
+
+## Fixes in v0.8.9
+
+### hasBasisSet is now declared once, as a datatype property
+It was declared both as an object property (range BasisSet) and as a
+datatype property (range Literal) - illegal punning in OWL 2 DL. The
+ont_mm data uses plain literals ("6-31G(d,p)"), so the datatype
+declaration is the one kept. It keeps its union domain (Atom or
+MolecularMethodology) and its place under hasMolecularFeature. It is no
+longer a sub-property of hasFeature, which is an object property: a
+datatype property cannot sit under one. The union domain still says what
+the hasFeature link was saying, that whatever carries a basis set is a
+methodology (or an atom).
+
+### hasUnit moved out from under hasAuxiliaryProperty
+hasAuxiliaryProperty has rdfs:Class as both domain and range, so a
+reasoner concluded that every FloatValue and every unit was itself a
+class. hasUnit is now a sub-property of extraGCObjectProperty, which has
+no domain or range. Verified by reasoning (HermiT) over a real ont_mm
+dataset: the graph stays consistent, and the only change is that the
+rdfs:Class types on FloatValue and unit individuals disappear.
+
+### Path-energy definitions now say what the data holds
+hasPathEnergy and ReactionPathPoint described a "relative" energy, but
+the pipeline stores the absolute total energy from the IRC log, in
+hartree. Both comments now say so, and how to get a relative energy.
+
+### kJ/mol unit
+gc:kiloJoules was used for enthalpy and Gibbs free energy values that
+are in kJ/mol, so it dropped the "per mole" (entropy already had
+J/(mol K)). Added gc:kiloJoulePerMole, owl:sameAs the QUDT unit
+KiloJ-PER-MOL (checked: typed qudt:Unit, quantity kind MolarEnergy).
+gc:kiloJoules is kept, marked owl:deprecated, so graphs built against
+earlier releases stay valid.
 
 Contributed via the ont_mm project (github.com/Darren01/ont_mm), which
 consumes this ontology for a GAMESS output extraction and SPARQL-driven

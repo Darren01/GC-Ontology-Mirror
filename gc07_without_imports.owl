@@ -1668,7 +1668,6 @@
     <!-- http://purl.org/gc/hasBasisSet -->
 
     <owl:DatatypeProperty rdf:about="http://purl.org/gc/hasBasisSet">
-        <rdfs:subPropertyOf rdf:resource="http://purl.org/gc/hasMolecularFeature"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:domain>
             <owl:Class>

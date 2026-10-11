@@ -322,11 +322,14 @@ It was declared both as an object property (range BasisSet) and as a
 datatype property (range Literal) - illegal punning in OWL 2 DL. The
 ont_mm data uses plain literals ("6-31G(d,p)"), so the datatype
 declaration is the one kept. It keeps its union domain (Atom or
-MolecularMethodology) and its place under hasMolecularFeature. It is no
-longer a sub-property of hasFeature, which is an object property: a
-datatype property cannot sit under one. The union domain still says what
-the hasFeature link was saying, that whatever carries a basis set is a
-methodology (or an atom).
+MolecularMethodology), which still says that whatever carries a basis set
+is a methodology (or an atom). It is no longer a sub-property of
+hasFeature (an object property) or of hasMolecularFeature: a datatype
+property cannot sit under an object property, and ROBOT reads the
+hasMolecularFeature link as an object-property axiom, which brought the
+punning straight back. hasMolecularFeature is itself declared as a
+datatype property while several object properties sit under it; that
+upstream inconsistency is left alone here.
 
 ### hasUnit moved out from under hasAuxiliaryProperty
 hasAuxiliaryProperty has rdfs:Class as both domain and range, so a
